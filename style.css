@@ -134,28 +134,30 @@ dot::before {
     }
 } */
 @media (-webkit-min-device-pixel-ratio:2) {
+    /*20px/2.9*/
     .header-section>.logo{
         
-        margin: 7.6923px auto;
+        margin:6.8965px auto;
     }
     .header-section>.logo>img{
-        max-width: 42.6923px;
-        max-height: 12.307px;
+        max-width: 37.27586px;
+        max-height: 11.03448px;
     }
     .header-section>.responsive>.fa-bars{
-        font-size: 11.538px;
+        font-size: 10.34482px;
     }
     
     .header-section>nav>p{
         transform: scale(0.5);
         transform-origin: 0 0;
-        margin-bottom: 5.76923px;
+        width:100%;
+        margin-bottom: 5.17341px;
     }
     .header-section>nav>ul>li{   
-       line-height:15.3846px;  /*40/2.6*/
+       line-height:13.7931px;
     }
     .header-section>nav>ul>li>a{   
-       font-size: 5.76923px;
+       font-size: 5.17241px;
        color:rgb(232, 236, 11);
     }
 }
