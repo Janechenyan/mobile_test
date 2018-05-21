@@ -147,11 +147,12 @@ dot::before {
     }
     
     .header-section>nav>p{
-        height:.5px;
+        transform: scale(0.5);
+        transform-origin: 0 0;
         margin-bottom: 5.76923px;
     }
     .header-section>nav>ul>li{   
-       line-height:12.307px;  /*40/3.25*/
+       line-height:15.3846px;  /*40/2.6*/
     }
     .header-section>nav>ul>li>a{   
        font-size: 5.76923px;
