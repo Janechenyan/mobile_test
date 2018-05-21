@@ -109,9 +109,8 @@ dot::before {
 .active{
     background: rgb(9, 199, 142);
 }
-@media (-webkit-min-device-pixel-ratio:2) {
-    .header-section>.logo{
-        
+/* @media (-webkit-min-device-pixel-ratio:2) {
+    .header-section>.logo{  
         margin: 10px auto;
     }
     .header-section>.logo>img{
@@ -133,8 +132,8 @@ dot::before {
        font-size:7.5px;
        color:rgb(236, 11, 217);
     }
-}
-@media (-webkit-min-device-pixel-ratio:2.5) {
+} */
+@media (-webkit-min-device-pixel-ratio:2) {
     .header-section>.logo{
         
         margin: 7.6923px auto;
@@ -152,7 +151,7 @@ dot::before {
         margin-bottom: 5.76923px;
     }
     .header-section>nav>ul>li{   
-       line-height:15.3846px;
+       line-height:12.307px;  /*40/3.25*/
     }
     .header-section>nav>ul>li>a{   
        font-size: 5.76923px;
