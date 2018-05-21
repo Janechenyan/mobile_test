@@ -150,7 +150,7 @@ dot::before {
     .header-section>nav>p{
         transform: scale(0.5);
         transform-origin: 0 0;
-        width:100%;
+        width:200%;
         margin-bottom: 5.17341px;
     }
     .header-section>nav>ul>li{   
