@@ -63,7 +63,7 @@ dot::before {
 }
 /*手机版屏幕大小间距无变化*/
 .header-section>.logo{
-    flex:0 0 50%; 
+    flex:1 1 50%; 
     margin: 20px auto;
 }
 
@@ -73,7 +73,7 @@ dot::before {
 }
 
 .header-section>.responsive{
-     flex:0 0 50%;
+     flex:1 1 50%;
      text-align: right;
 }
 
