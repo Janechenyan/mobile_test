@@ -65,12 +65,15 @@ dot::before {
 /*手机版屏幕大小间距无变化*/
 .header-section>.logo{
     flex:1 1 50%; 
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    margin: 4.8vw auto;
 }
 
 .header-section>.logo>img{
-    max-width: 111px;
-    max-height: 32px;
+    /* max-width: 111px;
+    max-height: 32px; */
+    max-width: 26.8vw;
+    max-height: 7.73vw;
 }
 
 .header-section>.responsive{
@@ -85,14 +88,14 @@ dot::before {
 
 /*手机版屏幕大小间距无变化*/
 .header-section>.responsive>.fa-bars{
-    font-size: 30px;
+    font-size: 7.25vw;
 }
 .header-section>nav>p{
     content:'';
     height:1px;
     background: #000;
     display: none;
-    margin-bottom: 15px;
+    margin-bottom: 3.623vw;
 }
 
 .header-section>nav>ul{
@@ -101,12 +104,12 @@ dot::before {
 
 /*手机版屏幕大小间距无变化*/
 .header-section>nav>ul>li{   
-   line-height:40px;
+   line-height:9.662vw;
 }
 
 /*手机版屏幕大小间距无变化*/
 .header-section>nav>ul>li>a{   
-   font-size: 15px;
+   font-size: 3.62vw;
 }
 
 .active{
@@ -115,33 +118,33 @@ dot::before {
 @media (-webkit-min-device-pixel-ratio:2) {
     /*20px/2.9*/
     .header-section>.logo{
-        /* margin:calc(40px / 2) auto; */
-        margin:20px auto;
+        margin:calc(4.8vw / 2.3) auto;
+        /* margin:6.8965px auto; */
     }
     .header-section>.logo>img{
-        /* max-width:calc(222px / 2);
-        max-height: calc(64px / 2); */
-        max-width: 111px;
-        max-height: 32px;
+        max-width:calc(26.8vw / 2);
+        max-height: calc(7.73vw / 2);
+        /* max-width: 37.27586px;
+        max-height: 11.03448px; */
     }
     .header-section>.responsive>.fa-bars{
-        /* font-size: calc(60px / 2); */
-        font-size: 30px;
+        font-size: calc(7.25vw / 2);
+        /* font-size: 10.34482px; */
     }
     
     .header-section>nav>p{
         transform: scaleY(0.5);
         transform-origin: 0 0;
-        /* margin-bottom: calc(30px / 2); */
-        margin-bottom: 15px;
+        margin-bottom: calc(3.623vw / 2);
+        /* margin-bottom: 5.17341px; */
     }
     .header-section>nav>ul>li{   
-        /* line-height:calc(80px / 2); */
-       line-height:40px;
+        line-height:calc(9.662vw / 2);
+       /* line-height:13.7931px; */
     }
     .header-section>nav>ul>li>a{   
-        /* font-size: calc(30px / 2); */
-       font-size: 15px;
+        font-size: calc(3.62vw / 2);
+       /* font-size: 5.17241px; */
        color:rgb(232, 236, 11);
     }
 }
@@ -163,7 +166,7 @@ dot::before {
     }
     
     .header-section>nav>p{
-        transform: scaleY(0.4);
+        transform: scaleY(0.);
         transform-origin: 0 0;
         margin-bottom: calc(30px / 2.5);
         /* margin-bottom: 5.17341px; */
