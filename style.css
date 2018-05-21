@@ -77,6 +77,11 @@ dot::before {
      text-align: right;
 }
 
+.header-section>nav{
+    flex:1 1 100%;
+  
+}
+
 /*手机版屏幕大小间距无变化*/
 .header-section>.responsive>.fa-bars{
     font-size: 30px;
@@ -88,10 +93,7 @@ dot::before {
     display: none;
     margin-bottom: 15px;
 }
-.header-section>nav{
-    flex:1;
-  
-}
+
 .header-section>nav>ul{
     display: none;
 }
