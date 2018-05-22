@@ -153,11 +153,11 @@ dot::before {
     }
     .header-section>nav>ul>li{   
         /* line-height:calc(80px / 2); */
-       line-height:2.2222222rem;
+       line-height:1.666667rem;
     }
     .header-section>nav>ul>li>a{   
         /* font-size: calc(30px / 2); */
-       font-size:1.111111rem;
+       font-size:0.833333rem;
        color:rgb(232, 236, 11);
     }
 }
