@@ -125,6 +125,7 @@ dot::before {
 .active{
     background: rgb(9, 199, 142);
 }
+/*414px屏 根元素为18px*/
 @media (-webkit-min-device-pixel-ratio:2) {
     /*20px/2*/
     .header-section>.logo{
@@ -152,11 +153,11 @@ dot::before {
     }
     .header-section>nav>ul>li{   
         /* line-height:calc(80px / 2); */
-       line-height:3.33333rem;
+       line-height:2.2222222rem;
     }
     .header-section>nav>ul>li>a{   
         /* font-size: calc(30px / 2); */
-       font-size:1.66667rem;
+       font-size:1.111111rem;
        color:rgb(232, 236, 11);
     }
 }
@@ -195,6 +196,7 @@ dot::before {
        color:rgb(232, 236, 11);
     }
 }
+
 
 @media (-webkit-min-device-pixel-ratio:3) {
     .header-section>.logo{
