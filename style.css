@@ -69,7 +69,7 @@ dot::before {
 }
 
 /*手机版屏幕大小间距无变化*/
-/*xxxpx/18*/
+/*414px正好18px*/
 .header-section>.logo{
     -webkit-box-flex:1;
         -ms-flex:1 1 50%;
@@ -126,20 +126,20 @@ dot::before {
     background: rgb(9, 199, 142);
 }
 /*414px屏 根元素为18px*/
-@media (-webkit-min-device-pixel-ratio:2) {
-    /*20px/2*/
+/*在此处做以下设置，得到的像素是一致的，但在实际视觉上还是不一致的*/
+/* @media (-webkit-min-device-pixel-ratio:2) {
+    
     .header-section>.logo{
-        /* margin:calc(40px / 2) auto; */
+        
         margin:1.11111rem auto;
     }
     .header-section>.logo>img{
-        /* max-width:calc(222px / 2);
-        max-height: calc(64px / 2); */
+       
         max-width: 6.166667rem;
         max-height: 1.777778rem;
     }
     .header-section>.responsive>.fa-bars{
-        /* font-size: calc(60px / 2); */
+        
         font-size: 1.66667rem;
     }
     
@@ -148,15 +148,15 @@ dot::before {
                 transform: scaleY(0.5);
         -webkit-transform-origin: 0 0;
                 transform-origin: 0 0;
-        /* margin-bottom: calc(30px / 2); */
+        
         margin-bottom: .833333rem;
     }
     .header-section>nav>ul>li{   
-        /* line-height:calc(80px / 2); */
+       
        line-height:1.666667rem;
     }
     .header-section>nav>ul>li>a{   
-        /* font-size: calc(30px / 2); */
+       
        font-size:0.833333rem;
        color:rgb(232, 236, 11);
     }
@@ -164,17 +164,16 @@ dot::before {
 
 @media (-webkit-min-device-pixel-ratio:2.5) {
      .header-section>.logo{
-        /* margin:calc(40px / 2) auto; */
+        
         margin:0.8888889rem auto;
     }
     .header-section>.logo>img{
-        /* max-width:calc(222px / 2);
-        max-height: calc(64px / 2); */
+        
         max-width: 4.933336rem;
         max-height: 1.422224rem;
     }
     .header-section>.responsive>.fa-bars{
-        /* font-size: calc(60px / 2); */
+        
         font-size: 1.333336rem;
     }
     
@@ -183,15 +182,15 @@ dot::before {
                 transform: scaleY(0.38461);
         -webkit-transform-origin: 0 0;
                 transform-origin: 0 0;
-        /* margin-bottom: calc(30px / 2); */
+       
         margin-bottom: 0.666664rem;
     }
     .header-section>nav>ul>li{   
-        /* line-height:calc(80px / 2); */
+        
        line-height:1.3333336rem;
     }
     .header-section>nav>ul>li>a{   
-        /* font-size: calc(30px / 2); */
+        
        font-size:0.6666664rem;
        color:rgb(232, 236, 11);
     }
@@ -200,17 +199,16 @@ dot::before {
 
 @media (-webkit-min-device-pixel-ratio:3) {
      .header-section>.logo{
-        /* margin:calc(40px / 2) auto; */
+      
         margin:0.74074rem auto;
     }
     .header-section>.logo>img{
-        /* max-width:calc(222px / 2);
-        max-height: calc(64px / 2); */
+        
         max-width: 4.1111111rem;
         max-height: 1.4222224rem;
     }
     .header-section>.responsive>.fa-bars{
-        /* font-size: calc(60px / 2); */
+        
         font-size: 1.11111rem;
     }
     
@@ -219,19 +217,19 @@ dot::before {
                 transform: scaleY(0.333);
         -webkit-transform-origin: 0 0;
                 transform-origin: 0 0;
-        /* margin-bottom: calc(30px / 2); */
+        
         margin-bottom: 0.555556rem;
     }
     .header-section>nav>ul>li{   
-        /* line-height:calc(80px / 2); */
+       
        line-height:1.111111rem;
     }
     .header-section>nav>ul>li>a{   
-        /* font-size: calc(30px / 2); */
+        
        font-size:0.555556rem;
        color:rgb(232, 236, 11);
     }
-}
+} */
 /* 
 @media (min-width: 767px) and (-webkit-min-device-pixel-ratio:2){
     .header-section>.responsive, .header-section>nav>p{
@@ -303,3 +301,62 @@ dot::before {
        margin-right: 5px;
     }
 } */
+
+
+/*------------------
+  swiper
+--------------------*/
+.hero-section {
+    position: relative;
+    height:22.22222rem;
+}
+
+.hero-content {
+    width:50%;
+    height:300px;
+	position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    z-index: 5;
+    text-align: center;
+    display: none;
+}
+
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    width:100%;
+    height:100px;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+}
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+	display: inline-block;
+	height: 50px;
+	width: 100px;
+	background-color: #620bc0 !important;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.owl-carousel .owl-nav button.owl-next {
+    float: right;
+}
+
+.owl-carousel .owl-nav .owl-prev span,
+.owl-carousel .owl-nav .owl-next span {
+    color:#fff;
+}
+
+@media (min-width:768px) {
+    .hero-content {
+        display: block;
+    }
+}
