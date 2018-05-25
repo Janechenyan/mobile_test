@@ -1,6 +1,4 @@
-body{
-    overflow: hidden;
-}
+
 
 /*页面加载等待*/
 #preloder{
@@ -308,12 +306,13 @@ dot::before {
 --------------------*/
 .hero-section {
     position: relative;
-    height:22.22222rem;
+    height:21rem;
+    overflow: hidden;
 }
 
 .hero-content {
     width:50%;
-    height:300px;
+    height:16.6667rem;
 	position: absolute;
     top:0;
     bottom:0;
@@ -325,7 +324,9 @@ dot::before {
     display: none;
 }
 
-
+.owl-carousel{
+    height:100%;
+}
 .owl-carousel .owl-nav {
     position: absolute;
     width:100%;
@@ -358,5 +359,75 @@ dot::before {
 @media (min-width:768px) {
     .hero-content {
         display: block;
+    }
+}
+
+/*-----------
+second_block
+------------*/
+.second_block {
+    display: relative;
+    width:80%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.second_block>div {
+    
+    padding: 2.77778rem 1.388888rem;
+    margin-bottom: .55556rem;
+    overflow: hidden;
+    background: #ccc;
+}
+
+/*每个小块里的设置*/
+.second_block div{
+    text-align: center;
+}
+.second_block div .icon{
+    margin: 0 auto;
+    margin-top: 3.66667rem;
+    margin-bottom: 2.33333rem;
+}
+.second_block div .icon .fa-anchor {
+    font-size: 3.88889rem;
+}
+.second_block div h2 {
+    font-size: 1rem;
+    text-transform:uppercase;
+    margin-bottom: 1.66667rem;
+}
+.second_block div p {
+    font-size: .833333rem;
+    width:80%;
+    height:4.44444rem;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .second_block {
+        flex-flow: row wrap;
+        align-content: flex-start;
+    }
+    .second_block>div {
+        flex: 0 0 50%;
+    }
+    .second_block>div:nth-child(3){
+        flex: 0 0 100%;
+    }
+   
+}
+@media (min-width:992px) {
+    .second_block {
+        flex-flow: row;
+    }
+    .second_block>div {
+        flex: 0 0 30%;
+    }
+    .second_block>div:nth-child(3){
+        flex: 0 0 30%;
     }
 }

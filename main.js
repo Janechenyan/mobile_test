@@ -31,6 +31,5 @@ jQuery(function($){
       autoplayHoverPause: true,
       nav: true,            
     })
-        
     })
 })
